@@ -19,7 +19,7 @@ Welcome to **BuggyMess**, a simple tile-based game where you control a player ch
 
 1. Clone the repository:
     ```sh
-    git clone <your-repo-url>
+    git clone https://github.com/Circuit-Master/LogansBuggyMess
     ```
 2. Open the project in your preferred IDE.
 
