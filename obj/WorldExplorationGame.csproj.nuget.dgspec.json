@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "S:\\webdev\\game\\WorldExplorationGame\\WorldExplorationGame.csproj": {}
+    "S:\\webdev\\BuggyMess\\WorldExplorationGame.csproj": {}
   },
   "projects": {
-    "S:\\webdev\\game\\WorldExplorationGame\\WorldExplorationGame.csproj": {
+    "S:\\webdev\\BuggyMess\\WorldExplorationGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "S:\\webdev\\game\\WorldExplorationGame\\WorldExplorationGame.csproj",
+        "projectUniqueName": "S:\\webdev\\BuggyMess\\WorldExplorationGame.csproj",
         "projectName": "WorldExplorationGame",
-        "projectPath": "S:\\webdev\\game\\WorldExplorationGame\\WorldExplorationGame.csproj",
+        "projectPath": "S:\\webdev\\BuggyMess\\WorldExplorationGame.csproj",
         "packagesPath": "C:\\Users\\LMHum\\.nuget\\packages\\",
-        "outputPath": "S:\\webdev\\game\\WorldExplorationGame\\obj\\",
+        "outputPath": "S:\\webdev\\BuggyMess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LMHum\\AppData\\Roaming\\NuGet\\NuGet.Config",

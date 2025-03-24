@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>S:/webdev/game/WorldExplorationGame/Content/player.png</SourceFile>
+  <SourceFile>S:/webdev/BuggyMess/Content/player.png</SourceFile>
   <SourceTime>2025-03-23T22:14:40.8091203-07:00</SourceTime>
-  <DestFile>S:/webdev/game/WorldExplorationGame/Content/bin/DesktopGL/Content/player.xnb</DestFile>
-  <DestTime>2025-03-23T22:15:06.1316898-07:00</DestTime>
+  <DestFile>S:/webdev/BuggyMess/Content/bin/DesktopGL/Content/player.xnb</DestFile>
+  <DestTime>2025-03-24T10:40:44.3644003-07:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2024-08-16T10:05:56-07:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
