@@ -124,7 +124,7 @@ namespace WorldExplorationGame
             int offsetX = (_screenWidthInTiles / 2) * scaledTileSize - _playerPosition.X * scaledTileSize;
             int offsetY = (_screenHeightInTiles / 2) * scaledTileSize - _playerPosition.Y * scaledTileSize;
 
-            // Draw the map
+            // Draw the map (grass first)
             for (int y = 0; y < _map.GetLength(0); y++)
             {
                 for (int x = 0; x < _map.GetLength(1); x++)
@@ -133,15 +133,23 @@ namespace WorldExplorationGame
                     {
                         _spriteBatch.Draw(_grassTexture, new Rectangle(x * scaledTileSize + offsetX, y * scaledTileSize + offsetY, scaledTileSize, scaledTileSize), Color.White);
                     }
-                    else if (_map[y, x] == 2)
-                    {
-                        _spriteBatch.Draw(_treeTexture, new Rectangle(x * scaledTileSize + offsetX, y * scaledTileSize + offsetY - scaledTileSize, scaledTileSize, scaledTileSize * 2), Color.White);
-                    }
                 }
             }
 
             // Draw the player at the center of the screen
             _spriteBatch.Draw(_playerTexture, new Rectangle((_screenWidthInTiles / 2) * scaledTileSize, (_screenHeightInTiles / 2) * scaledTileSize - scaledTileSize, scaledTileSize, scaledTileSize * 2), Color.White);
+
+            // Draw the trees last
+            for (int y = 0; y < _map.GetLength(0); y++)
+            {
+                for (int x = 0; x < _map.GetLength(1); x++)
+                {
+                    if (_map[y, x] == 2)
+                    {
+                        _spriteBatch.Draw(_treeTexture, new Rectangle(x * scaledTileSize + offsetX, y * scaledTileSize + offsetY - scaledTileSize, scaledTileSize, scaledTileSize * 2), Color.White);
+                    }
+                }
+            }
 
             _spriteBatch.End();
 
@@ -150,22 +158,19 @@ namespace WorldExplorationGame
 
         private bool CheckCollision(Point playerPosition, int[,] map)
         {
-            // Check collision only on the bottom 16x16 pixels of the sprite
-            int bottomX = playerPosition.X;
-            int bottomY = playerPosition.Y + 1; // Bottom 16x16 pixels start at y + 1
-
-            if (bottomX < 0 || bottomX >= map.GetLength(1) || bottomY < 0 || bottomY >= map.GetLength(0))
+            // Check if the player position is out of bounds
+            if (playerPosition.X < 0 || playerPosition.X >= map.GetLength(1) || playerPosition.Y < 0 || playerPosition.Y >= map.GetLength(0))
             {
-                return false;
+                return true; // Treat out-of-bounds as a collision
             }
 
             // Check for collision with trees (bottom 16x16 pixels)
-            if (map[bottomY, bottomX] == 2)
+            if (map[playerPosition.Y, playerPosition.X] == 2)
             {
                 return true;
             }
 
-            return map[bottomY, bottomX] != 0;
+            return map[playerPosition.Y, playerPosition.X] != 1; // Only allow movement on grass tiles
         }
     }
 }
