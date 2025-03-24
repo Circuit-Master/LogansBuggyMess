@@ -68,3 +68,4 @@ namespace WorldExplorationGame
         public const float ScaleFactor = 4.0f; // Scale factor for textures
     }
 }
+```
