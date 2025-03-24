@@ -53,3 +53,4 @@ S:\webdev\BuggyMess\obj\Debug\net8.0\refint\WorldExplorationGame.dll
 S:\webdev\BuggyMess\obj\Debug\net8.0\WorldExplorationGame.pdb
 S:\webdev\BuggyMess\obj\Debug\net8.0\WorldExplorationGame.genruntimeconfig.cache
 S:\webdev\BuggyMess\obj\Debug\net8.0\ref\WorldExplorationGame.dll
+S:\webdev\BuggyMess\bin\Debug\net8.0\Content\tree.xnb

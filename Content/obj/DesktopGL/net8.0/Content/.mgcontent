@@ -6,8 +6,10 @@
   <SourceFiles>
     <File>S:/webdev/BuggyMess/Content/player.png</File>
     <File>S:/webdev/BuggyMess/Content/grass.png</File>
+    <File>S:/webdev/BuggyMess/Content/tree.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
